@@ -1,13 +1,13 @@
 import React from "react";
 import './style.css'
-import Logo from "./Logo";
+import Logo from "./images/hiit_logo.PNG";
 
 export default function Navbar({darkMode, toggleDarkMode}) {
     return(
         <nav className={darkMode ? 'dark' : ''}>
             <img
                 className="nav-logo" 
-                src="./images/hiit_logo.PNG" 
+                src={Logo} 
                 alt="HiiT logo" 
             />
             {/* <LogoPix/> */}
